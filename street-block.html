@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Street Block | CSS</title>
+
+    <style>
+        body {
+            background-color: #223;
+            color: white;
+        }
+
+        .street {
+            border: 1px dotted red;
+        }
+
+        .house {
+            width: 150px;
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        .house-roof {
+            width: 0px;
+            height: 0px;
+            
+            /* triangle */
+            border: 75px solid brown;
+            border-top-width: 0px;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-width: 90px;
+        }
+
+        .house-wall {
+            background-color: antiquewhite;
+            width: 150px;
+            height: 150px;
+        }
+
+        .house-window {
+            border: 5px solid brown;
+            width: 50px;
+            height: 50px;
+
+            transform: translateX(45px) translateY(45px);
+           
+        }
+
+        .window-split {
+            border-left: 4px solid brown;
+            margin-left: 15px;
+            height: 50px; 
+        }
+
+        .building-tall {
+            background-color: bisque;
+            height: 300px;
+            width: 100px;
+            display: inline-block;
+        }
+
+        .tall-window-one {
+            border: 2px solid orangered;
+            background-color: cornflowerblue;
+            width: 20px;
+            height: 50px;
+            margin-left: 10px;
+            transform: translateX(45px) translateY(20px);
+            
+        }
+
+        .tall-window-second {
+            border: 2px solid orangered;
+            background-color: cornflowerblue;
+            width: 20px;
+            height: 50px;
+            margin-right: 10px;
+            transform: translateX(10px) translateY(35px);
+
+        }
+
+        .door {
+            display: inline-block;
+            padding-top: 130px;
+        }
+
+        .cloud {
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 20px;
+        }
+
+        .building-small {
+            display: inline-block;
+            background-color: bisque;
+            height: 70px;
+            width: 90px;
+            display: inline-block;
+        }
+
+        .small-window-one {
+            border: 2px solid black;
+            background-color: crimson;
+            width: 40px;
+            height: 30px;
+            transform: translateX(40px) translateY(10px);
+        }
+
+        .simple-door {
+            border: 2px solid rgb(29, 221, 186);
+            background-color: rgb(230, 10, 91);
+            width: 20px;
+            height: 50px;
+            transform: translateX(5px) translateY(-18px);
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="Street">
+
+    <div class="house">
+        <div class="house-roof"></div>
+        <div class="house-wall">
+            <div class="house-window">
+                <div class="window-split"></div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="building-tall">
+        <div class="tall-window-one"></div>
+        <div class="tall-window-second"></div>
+        <div class="door">
+            <img src="https://icons.iconarchive.com/icons/google/noto-emoji-objects/64/62991-door-icon.png" alt="">
+        </div>
+       
+    </div>
+     <!-- insert building details-->
+     <div class="cloud">
+         <img src="https://icons.iconarchive.com/icons/flaticonmaker/flat-style/64/cloud-icon.png" alt="">
+     </div>
+    <div class="building-small">
+        <div class="small-window-one"></div>
+        <div class="simple-door"></div>
+        
+    </div>
+  
+
+
+
+    </div>
+    
+</body>
+</html>
